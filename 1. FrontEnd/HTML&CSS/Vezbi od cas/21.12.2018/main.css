@@ -1,0 +1,23 @@
+.test {
+
+width: 100%;
+height: 300px;
+float: left;
+}
+
+.test, crvena{
+
+    width: 50%;
+    background-color: red;
+}
+
+.test, zelena{
+    width: 25%;
+    background-color: green;
+
+}
+
+.test, plava {
+    width: 25%;
+    background-color: blue;
+}

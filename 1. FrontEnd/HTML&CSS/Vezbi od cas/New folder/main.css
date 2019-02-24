@@ -1,0 +1,19 @@
+.prv {
+
+    width: 100%;
+    height: 500px;
+    border: 2px solid red;
+}
+
+.slika {
+    width: 30%;
+    height: 300px;
+    float: left;
+}
+
+.tekst {
+    width: 50%;
+    height: 300px;
+    float: left;
+    
+}

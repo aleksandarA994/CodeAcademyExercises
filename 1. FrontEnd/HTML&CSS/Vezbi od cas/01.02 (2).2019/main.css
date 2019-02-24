@@ -1,0 +1,662 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, ul, ul li {
+    margin: 0;
+    padding: 0;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+
+.clearfix:before, .clearfix:after 
+{ content: ""; 
+display: table; 
+} 
+
+.clearfix:after { 
+clear: both; } 
+
+.clearfix { 
+clear:  both; 
+*zoom: 1; 
+} 
+
+.box-50{
+    width: 50%;
+    float: left;
+	position:relative;
+}
+
+.box-33 {
+    width: 33.33%;
+    float: left;
+	position:relative;
+}
+
+.box-25 {
+    width: 25%;
+    float: left;
+	position:relative;
+}
+
+
+.container {
+    width: 1000px;
+	margin: 0 auto;
+	position: relative;
+  
+}
+
+header {
+    background-color: rgb(97, 97, 97);  
+}
+
+
+header .search {
+    position: relative;
+	width: 70%;
+    margin: 15px;
+    margin-left: 100px;
+}
+
+header .search .fa-search {
+    position: absolute;
+	top: 10px;
+    left: 14px;
+   color: white;
+   
+}
+
+header .search input {
+	border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;  
+    background-color: rgba(1,1,1,.45);
+    padding-left: 35px;
+  
+}
+
+header nav.main.menu {
+    float: right;
+    padding-top: 15px;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a {
+   text-decoration: none;
+    color: rgb(207, 207, 207);
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+header .main-logo {
+      position: relative;
+    z-index: 99;
+}
+
+header .main-logo img {
+    max-width: 100px;
+    position: absolute;
+    top: 10px;
+}
+
+#health {
+    background: url("main-back.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+}
+
+#health .main-heading {
+    width: 75%;
+    background-color: rgba(0,0,0, 0.2);
+    float: left;
+    margin: 125px 0;
+    padding: 25px;
+}
+
+#health .main-heading h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: normal;
+}
+
+
+#health .main-heading h1 span {
+    font-size: 90px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    margin-top: -30px;
+
+    
+}
+
+.sticky {
+    position: fixed;
+    right: -5px;
+    top: 50%;
+    z-index: 9999;   
+    
+}
+
+
+#diets, #health-slogan, #who, #sponsors, #team {
+ padding: 80px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #d13834;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+
+.border {
+    border-left: 2px solid #e22f37;
+    border-right: 2px solid #e22f37;
+}
+
+#health-slogan {
+    background: url("main-back2.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+
+
+.button, .btn {
+    color: white;
+    background-color: #df081d;
+    border-radius: 15px;
+    min-width: 150px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+
+}
+
+.button:hover, .btn:hover {
+    background-color: rgb(255, 174, 0);
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+#diets .diet-box {
+    text-align: center
+}
+
+#diets .diet-box p {
+  color: #d13834;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-top: 35px;
+
+}
+
+#health-slogan h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+#health-slogan .button {
+float: right;
+margin-top: 60px;
+margin-right: 60px;
+}
+
+
+
+#who .who-we-are-text {
+padding: 15px;
+
+}
+
+#who .who-we-are-text h3 {
+    padding-bottom: 15px;
+    
+    }
+
+#who .who-we-are-text table {
+    width: 100%;
+    text-align: center;
+}
+
+#who table tr th {
+    color: #e22f37;
+    padding-bottom: 10px;
+    background-color: white;
+   
+
+}
+
+#who table tr td {
+    padding: 20px;
+}
+
+#who table, #who th, #who td {
+    border-bottom: 2px solid rgb(175, 175, 175);
+    border-collapse: collapse;
+  }
+
+  #who tr:nth-child(odd) {
+       background-color: rgb(209, 243, 255);
+ }
+
+ .gray {
+   
+     background-color: rgb(63, 63, 63);
+     position: relative;
+ }
+
+
+.center  {
+   text-align: center;
+    
+}
+
+
+#team .our-team-box-img{
+     border: 10px solid pink;
+    border-radius: 20px;
+    height: 200px;;
+    margin: 0 15px;
+  
+}
+
+#team .our-team-box-img.member1{
+    background: url(01.png);
+
+    background-position: center;
+
+}
+
+#team .our-team-box-img.member2 {
+    background: url("02.png");
+    background-position: center;
+    
+}
+
+#team .our-team-box-img.member3{
+    background: url("03.png");
+    background-position: center;
+    
+}
+#team .our-team-box-img.member4 {
+    background: url("04.png");
+    background-position: center;
+    
+}
+
+#team .our-team-box-info {
+    color: #d13834;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+#team p.team-name {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#sponsors h2 {
+    color: white
+}
+
+#sponsors .sponsors-photos {
+    padding: 40px 0;
+}
+
+
+#contact {
+    background: url("contact-back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+}
+
+
+#contact .overlay-black {
+    padding: 80px 0;
+}
+
+#contact .contact-form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -30px;
+    
+}
+
+#contact .form-title {
+    text-align: center;
+    padding: 20px;
+    background-color: #e22f37;
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto -25px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+#contact .the-form {
+    background-color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+}   
+
+#contact fieldset {
+      border: none;
+    
+}
+
+#contact .input1 {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: none;
+    border: 1px solid #e22f37;
+    margin-bottom: 15px;
+}
+
+
+.overlay-black {
+    background-color: rgba(0,0,0,.6);
+}
+
+
+#contact h2{
+    color: white;
+    text-align: left;
+    margin-bottom: 0
+}
+
+#contact h4 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#contact .address {
+    color: white;
+}
+
+#contact .address p {
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#contact .btn  {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    background-color: rgba(0,0,0,1);
+   padding: 15px;
+   text-align: center;
+   color: white;
+
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.nav label {
+    font-size: 25px;
+    display: none;
+}
+
+
+
+@media all and (max-width: 768px) {
+
+
+.container {
+    width: 100%; 
+}
+
+.container .search {
+    width: 100%;
+    margin-left: 0%;
+    
+
+
+}
+
+.box-50 {
+    width: 100%;
+    float: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.main-logo.pull-left img {
+    width: 70px;   
+    padding-left: 10px;
+    margin-left: 80%;
+    position: relative;
+}
+
+.nav label {
+    display: block;
+    padding-top: 10px;
+    float: left;
+    padding-left: 10px;
+    
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.main.menu {
+    display: none;
+}
+
+.main.menu ul li {
+    display: block;
+    
+    
+    
+}
+
+#toggle:checked + .main.menu {
+    display: block;
+    
+}
+
+#diets h2 {
+    text-align: center; 
+    font-size: 25px;
+    
+
+}
+
+
+#diets .box-33.border {
+    border: none;
+}
+
+.box-33 {
+    width: 100%;
+}
+
+#diets .box-33 img{
+    width: 100px;
+}
+
+#diets .box-33 p {
+    font-size: 20px;
+}
+
+#health {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+}
+
+
+
+#health .main-heading h1 span {
+    font-size: 40px;
+    display: initial;
+    margin-bottom: 20%;
+}
+
+
+
+#health .main-heading h1 {
+font-size: 30px;
+}
+
+
+#health .main-heading {
+    margin: 40px;
+    width: 70%;
+}
+
+
+
+#health-slogan {
+    height: 300px;
+}
+
+
+#health-slogan h1 {
+    font-size: 20px;
+}
+
+
+
+#sponsors .sponsors-photos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+      
+    
+}
+
+#sponsors .sponsors-photos img {
+    width: 150px;
+    align-self: center; 
+    padding-top: 20px;
+}
+
+.sticky img {
+    display: none;
+}
+
+
+
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#who .box-50 .who-we-are-text  {
+    padding-right:20px;
+}
+
+.box-25 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.button {
+    float: none;
+    width: 50px;
+    height: 50px;
+    
+    
+}
+
+#contact .overlay-black .box-50 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact .overlay-black .box-50 h2 {
+    text-align: center;
+}
+
+.box25-flex {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.our-team-box {
+    width: 200px;
+    align-self: center;
+   
+
+}
+#contact .form-title {
+    font-size: 15px;
+    height: 40px;
+    padding-top: 10px;
+        
+}
+
+
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 1024px;
+    margin: 0% auto;
+}
+
+header {
+    background-color: #074c69;
+    overflow: auto;
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #09729e;
+    overflow: auto;
+
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.menu {
+   justify-self: end;
+}
+
+.fa-book-open {
+    color: white;
+}
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li {
+    text-transform: uppercase;
+    height: 40px;
+    padding-top: 10px;
+    
+    
+}
+
+.menu ul li a{
+    padding: 20px; 
+    
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: #02c4a3;
+}
+
+.menu ul li:nth-child(3){
+    background-color: #02c4a3;
+    
+}
+
+.menu ul li:nth-child(3):hover{
+    background-color: white;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #09729e;
+    background-color: #09729e;
+    border-radius: 100%;
+    background-image: url(images/logo-www.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 10px;    
+    
+   
+}
+
+.main {
+    height: 500px;
+    background-image: url(images/main-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+.main-text {
+    color: white;
+    margin-top: 20%;
+}
+
+.main-text h1{
+    text-transform: uppercase;
+}
+
+.main-text p{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.pictures img {
+    width: 70px;
+    padding-top: 20px;
+}
+
+.pictures p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    
+}
+
+
+.img-1 {
+    width: 320px;
+    height: 150px;
+    background-color: #074c69;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.img-1 img, p{
+    align-self: center;
+}
+.img-2 {
+    width: 150px;
+    height: 150px;
+    background-color: #074c69;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.img-2 img, p{
+    align-self: center;
+}
+.img-3 {
+    width: 150px;
+    height: 150px;
+    background-color: #074c69;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.img-3 img, p{
+    align-self: center;
+}
+
+.img-1:hover, .img-2:hover, .img-3:hover{
+    background-color: background: rgb(9,114,158);
+    background: -moz-linear-gradient(left, rgba(9,114,158,1) 0%, rgba(229,229,229,1) 42%, rgba(234,232,233,1) 55%, rgba(2,196,163,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(9,114,158,1) 0%,rgba(229,229,229,1) 42%,rgba(234,232,233,1) 55%,rgba(2,196,163,1) 100%);
+    background: linear-gradient(to right, rgba(9,114,158,1) 0%,rgba(229,229,229,1) 42%,rgba(234,232,233,1) 55%,rgba(2,196,163,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09729e', endColorstr='#02c4a3',GradientType=1 );;
+}
+
+.flex {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+
+.contact-form form {
+    width: 400px;
+    height: 400px;
+    background: lightgray;
+    margin-left: 125px;
+    margin-top: 50px;
+    
+    
+    
+   
+    
+
+}
+
+
+
+.contact-form fieldset {
+    border: none;
+}
+
+.contact-form label input {
+ width: 100%;
+ height: 50px;
+ padding-left: 10px;
+ margin-top: 10px;
+ border-radius: 5px;
+ border: none;  
+}
+
+.comment1 {
+    height: 150px;
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.contact-form h3 {
+    width: 450px;
+    background-color: #09729e;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px; 
+    position: absolute;
+    
+    margin-left: 100px;
+    margin-top: 0px;
+    
+   
+    
+}
+
+.button {
+    width: 80%;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: background: rgb(9,114,158);
+    background: -moz-linear-gradient(left, rgba(9,114,158,1) 0%, rgba(229,229,229,1) 42%, rgba(234,232,233,1) 55%, rgba(2,196,163,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(9,114,158,1) 0%,rgba(229,229,229,1) 42%,rgba(234,232,233,1) 55%,rgba(2,196,163,1) 100%);
+    background: linear-gradient(to right, rgba(9,114,158,1) 0%,rgba(229,229,229,1) 42%,rgba(234,232,233,1) 55%,rgba(2,196,163,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09729e', endColorstr='#02c4a3',GradientType=1 );;
+    border: none;
+    color: #074c69;
+    margin-top: 30px;
+    margin-left: 10%;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.comment  {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: -5%;
+
+}
+
+.menu ul li .dropdown{
+    display: none;
+    
+    padding: 20px;
+}
+
+.menu ul li .dropdown li ul {
+    display: none;
+}
+
+.menu ul li:hover>ul,
+ul li ul:hover{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #02c4a3;
+    padding-left: 0%;
+}
+
+.menu ul li .dropdown li:hover>ul {
+    display: block;
+}
+
+.menu ul li:hover>ul,
+ul li ul:hover>ul li {
+    display: initial;
+
+}
+
+
+#toggle {
+    display: none;
+}
+
+.nav label {
+    display: none;
+}
+
+@media all and (max-width:768px){
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: none;
+    }
+
+    .nav label {
+        display: initial;
+        float: right;
+        font-size: 40px;
+        color: white;
+        
+        
+    }
+
+    .menu ul li .dropdown li:hover>ul {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        
+
+        
+        
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    #toggle:checked +.menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:0;
+        right: 0;
+        margin-top: 15%;
+        background-color: #074c69;
+        padding-left: 0%;
+
+
+
+
+
+        
+    }
+
+        
+
+    .main {
+        width: 100%;
+        background-position: center;
+        height: 250px;
+    }
+
+    .comment {
+        flex-direction: column;
+    }
+
+    .contact-form form{
+        margin-left: 0;
+        width: 100%;
+        
+    }
+
+    
+
+    .contact-form h3{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-top: 5%;
+    }
+
+    .menu ul li .dropdown{
+        display: none;
+    }
+    .menu ul li .dropdown li:hover>ul {
+        display: none;
+    }
+    
+    .menu ul li:hover>ul,
+    ul li ul:hover>ul li {
+        display: none;
+    
+    }
+
+    
+
+
+
+}
+

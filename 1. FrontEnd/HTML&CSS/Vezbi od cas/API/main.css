@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+.container {
+    width:1024px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+}
+
+.nav-small ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    
+}
+
+.nav-small ul li{
+    height: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.nav-small ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-small ul li:nth-child(2){
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.nav-small ul li:nth-child(3){
+    padding-right: 0%;
+}
+
+.nav-small {
+    align-self: flex-end;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-bar {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.search-right {
+    display: flex;
+    flex-direction: row;
+    padding-left: 55px;
+    margin-left: 10%;
+    
+}
+
+.logo-bar input {
+    width: 350px;
+    background-image: url(search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 40px;
+    color: grey;
+    border: 1px solid grey;
+    padding-left: 10px;
+    
+    
+    
+}
+
+.logo-bar ul {
+       
+    font-size:15px;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    
+}
+
+
+
+.logo-bar ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+
+}
+
+.main-nav {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.main-nav .container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.main-nav ul {
+    font-size: 15px;
+}
+
+.left ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0%;
+    
+}
+
+.left ul li {
+    padding-right: 10px;
+    text-transform: uppercase;
+   
+}
+
+.left ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6%;
+    
+}
+
+.right ul {
+    list-style-type: none;
+    
+    height: 20px;
+}
+.right ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.right img {
+    padding-left: 40px;
+}

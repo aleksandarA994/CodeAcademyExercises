@@ -1,0 +1,1086 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, ul, ul li {
+    margin: 0;
+    padding: 0;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+.clearfix:before, .clearfix:after 
+{ content: ""; 
+display: table; 
+} 
+
+.clearfix:after { 
+clear: both; } 
+
+.clearfix { 
+clear:  both; 
+*zoom: 1; 
+} 
+
+.text-center {
+    text-align: center;
+}
+
+
+.container {
+    width: 1000px;
+	margin: 0 auto;
+	position: relative;
+  
+}
+
+header {
+    background-color: rgb(97, 97, 97);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+header .container {
+ display:flex;
+
+}
+
+
+header .search {
+	position: relative;   
+    margin: 15px;
+    margin-left: 130px;
+}
+
+header .search .fa-search {
+    position: absolute;
+	top: 10px;
+    left: 14px;
+    color: white;
+}
+
+header .search input {
+	border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;  
+    background-color: rgba(1,1,1,.45);
+  
+}
+
+header nav.main.menu {
+  
+    padding-top: 15px;
+}
+
+header nav ul {
+    display: flex;
+	justify-content: flex-end;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+
+
+.box-50 {
+    flex: 1 0 50%;
+}
+
+.box-60 {
+    flex: 1 0 60%;
+}
+
+.box-40 {
+    flex: 1 0 40%;
+}
+
+.box-25 {
+    flex: 1 0 25%;
+}
+
+.box-33 {
+    flex: 1 0 33%;
+}
+
+#contact .overlay-black .container {
+	display: flex;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+header nav ul li a:hover{
+    color: black;
+}
+
+header .main-logo {
+    position: relative;
+    z-index: 99;
+}
+
+header .main-logo img {
+    max-width: 100px;
+    position: absolute;
+    top: 10px;
+    padding: 15px;
+    background-color: #d13834;
+    border-radius: 50%;
+}
+
+#health {
+    background: url("main-back.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+}
+
+#health .main-heading {
+    width: 75%;
+    background-color: rgba(0,0,0, 0.2);
+    float: left;
+    margin: 125px 0;
+    padding: 25px;
+}
+
+#health .main-heading h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: normal;
+}
+
+
+#health .main-heading h1 span {
+    font-size: 90px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    margin-top: -30px;
+
+    
+}
+
+.sticky {
+    position: fixed;
+    right: -5px;
+    top: 50%;
+    z-index: 9999;   
+    
+}
+
+
+#diets, #health-slogan, #who, #sponsors, #team {
+ padding: 80px 0;
+}
+
+#diets .container, #who .container, #sponsors .container, #team .container {
+display: flex;
+}
+
+h2 {
+    text-align: center;
+    color: #d13834;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+
+.border {
+    border-top: 2px solid #d13834;
+    border-bottom: 2px solid #d13834;
+}
+
+#health-slogan {
+    background: url("main-back2.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+
+
+.button, .btn {
+    color: white;
+    background-color: #d13834;
+    border-radius: 15px;
+    min-width: 150px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+
+}
+
+.button:hover, .btn:hover {
+    background-color: rgb(255, 174, 0);
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+#diets .diet-box {
+    text-align: center;
+    padding: 25px;
+}
+
+#diets .diet-box img {
+max-width: 120px;
+}
+
+#diets .diet-box p {
+  color: #d13834;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-top: 35px;
+
+}
+
+#health-slogan h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+#health-slogan .button {
+float: right;
+margin-top: 60px;
+margin-right: 60px;
+}
+
+
+
+#who .who-we-are-text {
+padding: 15px;
+
+}
+
+#who .who-we-are-text h3 {
+    padding-bottom: 15px;
+    
+    }
+
+#who .who-we-are-text table {
+    width: 100%;
+    text-align: center;
+}
+
+#who table tr th {
+    color: #d13834;
+    padding-bottom: 10px;
+    background-color: white;
+   
+
+}
+
+#who table tr td {
+    padding: 20px;
+}
+
+#who table, #who th, #who td {
+    border-bottom: 2px solid rgb(175, 175, 175);
+    border-collapse: collapse;
+  }
+
+  #who tr:nth-child(odd) {
+       background-color: rgb(209, 243, 255);
+ }
+
+ .gray {
+   
+     background-color: rgb(63, 63, 63);
+     position: relative;
+ }
+
+
+.center  {
+   text-align: center;
+    
+}
+
+
+#team .our-team-box-img{
+     border: 10px solid pink;
+    border-radius: 20px;
+    height: 200px;;
+    margin: 0 15px;
+  
+}
+
+#team .our-team-box-img.member1{
+    background: url(01.png);
+
+    background-position: center;
+
+}
+
+#team .our-team-box-img.member2 {
+    background: url("02.png");
+    background-position: center;
+    
+}
+
+#team .our-team-box-img.member3{
+    background: url("03.png");
+    background-position: center;
+    
+}
+#team .our-team-box-img.member4 {
+    background: url("04.png");
+    background-position: center;
+    
+}
+
+#team .our-team-box-info {
+    color: #d13834;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+#team p.team-name {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#sponsors h2 {
+    color: white
+}
+
+#sponsors .sponsors-photos {
+    padding: 40px 0;
+}
+
+
+#contact {
+    background: url("contact-back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+}
+
+
+#contact .overlay-black {
+    padding: 80px 0;
+}
+
+#contact .contact-form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -30px;
+    
+}
+
+#contact .form-title {
+    text-align: center;
+    padding: 20px;
+    background-color: #d13834;
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto -25px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+#contact .the-form {
+    background-color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+}   
+
+ fieldset {
+      border: none;
+    
+}
+
+#contact .input1, .appointment-box .input1 {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: none;
+    border: 1px solid #d13834;
+    margin-bottom: 15px;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.overlay-black {
+    background-color: rgba(0,0,0,.6);
+}
+
+
+#contact h2{
+    color: white;
+    text-align: left;
+    margin-bottom: 0
+}
+
+#contact h4 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#contact .address {
+    color: white;
+}
+
+#contact .address p {
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#contact .btn  {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    background-color: rgba(0,0,0,1);
+   padding: 15px;
+   text-align: center;
+   color: white;
+
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.appointment-row {
+    display: flex;
+}
+
+
+.appointment-box {
+    margin-top: -146px;
+  
+}
+
+.appointment-box h4 {
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    background-color: #d13834;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.appointment-box form {
+    padding: 40px 20px;
+    background-color: #f5f5f5;;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.appointment-row .appointment-blog {
+    padding: 30px 15px;
+}
+
+.row-diets {
+    display: flex;
+flex-direction: column;
+flex: 1 0 30%;
+padding: 0 30px;
+}
+
+.appointment-and-blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog {
+    display: flex;
+    margin: 0 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+}
+
+.blog-item {
+    border: 1px solid #e3e3e3;
+    flex-basis: calc(50% - 30px);   
+    margin-bottom: 25px;
+}
+
+.blog-item.big-item {
+    /* width: 100%; */
+    flex-basis: 100%;
+    position: relative;
+}
+
+.blog-item.big-item p.blog-title {
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(209, 56, 52,.7);
+    color: white;
+    text-transform: uppercase;
+ 
+}
+
+
+.blog-item img {
+    max-width: 100%;
+}
+
+.blog-item p {
+    padding: 15px;
+    font-weight: lighter;
+    font-size: normal;
+}
+
+.blog-item  p.blog-title {
+    font-size: 24px;
+    padding-bottom: 0;
+    line-height: 1.2;
+}
+
+#sponsors .container {
+    justify-content: space-evenly;
+}
+
+.sponsors-box {
+    text-align: center;
+}
+
+.sponsors-box p {
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.nav label {
+    font-size: 25px;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+.container {
+    width: 100%;
+    
+    
+}
+
+.nav label {
+    display: block;
+    padding-top: 10px;
+    float: left;
+    padding-left: 10px;
+    
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main.menu {
+    display: none;
+}
+
+.main.menu ul li {
+    display: block;
+    
+    
+    
+    
+}
+
+
+
+#toggle:checked + .main.menu {
+    display: block;
+    
+}
+
+header .main-logo img {
+    position: relative;
+    display: initial;
+    align-self: center;
+}
+
+header {
+    position: relative;
+}
+
+.box-50 {
+   
+    width: 100%;
+    flex: unset;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+header .search {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.sticky {
+    display: none;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.row-diets {
+    flex: unset;
+}
+
+.appointment-row{
+    flex-direction: column;
+}
+
+.blog-item.big-item {
+    flex-basis: 50%;
+}
+
+#diets .diet-box p {
+    font-size: 20px;
+}
+
+#diets .diet-box img {
+    max-width: 80px;
+}
+
+.appointment-box {
+    margin-top: 0;
+}
+
+
+
+#health {
+    width: 100%;
+    height: 300px;
+    background-position: center
+    
+    
+}
+
+#health .main-heading h1 {
+    font-size: 20px;
+    padding-bottom: 20px;   
+    
+}
+
+#health .main-heading h1 span {
+    font-size: 25px;
+    margin-top: 0%;
+
+}
+
+#health .main-heading {
+    display: block;
+    margin: 50px 0; 
+}
+
+h2 {
+    font-size: 25px;
+}
+#diets .container, #who .container, #sponsors .container, #team .container{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+#health-slogan h1 {
+    font-size: 20px;
+}
+
+#health-slogan {
+    height: 200px;
+    background-position: center;
+    
+}
+
+#health-slogan .button  {
+    margin-top: 0;
+    height: 25px;
+    padding: 0 0 20 0;
+    font-size: 15px;
+    
+}
+
+.button, .btn {
+    min-width: 100px;
+}
+
+#contact .overlay-black .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .form-title {
+width: 50%;
+height: 50px;
+padding-top: 15px;
+font-size: 15px;
+
+}
+
+#contact h4  {
+    text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact .address {
+   text-align: center;
+}
+
+#contact .contact-form {
+    padding-top: 20px;
+    
+}
+
+.our-team-box {
+    width: 250px;
+    
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+
+.box-25 {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    flex: unset;
+    
+}
+
+
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+   
+   
+    .container {
+        width: 100%;
+        
+        
+    }
+    
+    .nav label {
+        display: block;
+        padding-top: 10px;
+        float: left;
+        padding-left: 10px;
+        
+    
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-bottom: 20px;
+        
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main.menu {
+        display: none;
+    }
+    
+    .main.menu ul li {
+        display: block;
+        
+        
+        
+        
+    }
+    
+    
+    
+    #toggle:checked + .main.menu {
+        display: block;
+        
+    }
+    
+    header .main-logo img {
+        position: relative;
+        display: initial;
+        float: right;
+        margin-right: 20px;
+    }
+    
+    header {
+        position: relative;
+    }
+    
+    .box-50 {
+       
+        width: 100%;
+        flex: unset;
+        
+        
+    }
+    
+    header .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    header .search {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 15%;
+    }
+    
+    .sticky {
+        display: none;
+    }
+    
+    .blog {
+        display: flex;
+        flex-direction: column; 
+        
+    }
+
+    
+    
+    .row-diets {
+        flex-direction: row;
+        flex: unset;
+    }
+
+    .diet-box {
+        width: 33%;
+    }
+
+    .border {
+        border-top: none;
+        border-bottom: none;
+        border-right: 2px solid #d13834;
+        border-left: 2px solid #d13834;
+    }
+    
+    .appointment-row{
+        flex-direction: column;
+    }
+    
+    .blog-item.big-item {
+        flex-basis: 50%;
+    }
+
+    .blog-item.big-item img{
+        margin-left: 0%;
+    }
+
+    .blog-item img{
+        margin-left: 20%;
+    }
+    
+    #diets .diet-box p {
+        font-size: 20px;
+    }
+    
+    #diets .diet-box img {
+        max-width: 80px;
+    }
+    
+    .appointment-box {
+        margin-top: 0;
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    
+    
+    #health {
+        width: 100%;
+        height: 300px;
+        background-position: center
+        
+        
+    }
+    
+    #health .main-heading h1 {
+        font-size: 20px;
+        padding-bottom: 20px;   
+        
+    }
+    
+    #health .main-heading h1 span {
+        font-size: 25px;
+        margin-top: 0%;
+    
+    }
+    
+    #health .main-heading {
+        display: block;
+        margin: 50px 0; 
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    #diets .container, #who .container, #sponsors .container, #team .container{
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    
+    #health-slogan h1 {
+        font-size: 20px;
+    }
+    
+    #health-slogan {
+        height: 200px;
+        background-position: center;
+        
+    }
+    
+    #health-slogan .button  {
+        margin-top: 0;
+        height: 40px;
+        padding: 6 0 0 0;
+        font-size: 17px;
+        margin-right: 20%;
+        
+    }
+    
+    .button, .btn {
+        min-width: 100px;
+    }
+
+    #sponsors .container{
+        flex-direction: row;
+    }
+
+    .sponsors-box {
+        width: 21%;
+        
+    }
+
+    #team .container {
+        flex-direction: row;
+    }
+    
+    #contact .overlay-black .container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #contact .form-title {
+    width: 50%;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 15px;
+    margin-right: 25%;
+    
+    }
+    
+    #contact h4  {
+        text-align: center;
+    }
+    
+    #contact h2 {
+        text-align: center;
+    }
+    
+    #contact .address {
+       text-align: center;
+    }
+    
+    #contact .contact-form {
+        padding-top: 20px;
+        
+    }
+    
+    .our-team-box {
+        width: 190px;
+        
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+       
+    
+    }
+    
+    
+    .box-25 {
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+        flex: unset;
+        
+    }
+
+    .the-form {
+        width: 100%;
+       
+    }
+    
+}

@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;  
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  body {
+      margin: 0;
+  }
+  
+  .box-25, .box-33, .box-50, .box-75, .box-10 {
+      float:left;
+      position: relative;  
+  }
+  
+  .box-25 {
+      width: 25%;  
+  }
+  
+  .box-33 {
+      width: 33.3%;
+   }
+  
+  .box-50 {
+      width: 50%;  
+  }
+  
+  .box-75 {
+      width: 75%;  
+  }
+  
+  .box-10 {
+      width: 10%;  
+  }
+  
+  .clearfix:before, .clearfix:after 
+  { content: ""; 
+  display: table; 
+  } 
+  
+  .clearfix:after { 
+  clear: both; } 
+  
+  .clearfix { 
+  clear:  both; 
+  *zoom: 1; 
+  } 
+  
+  
+  
+  .container {
+      width: 1024px;
+      margin: 0 auto;
+      position: relative;
+  }
+  
+  header {
+      display: none;
+  }
+  
+  
+  header nav ul {
+  float: right;
+  }
+  
+  header nav ul li {
+      display: inline-block;
+  }
+  
+  
+  h2.main-title {
+      font-size: 34px;
+      margin: 10px 0;
+  }
+  
+  h5.description {
+      font-size: 16px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  
+  .company-details {
+      padding-left: 15px;
+    /*  background-color: rgba(255,255,255,.2);*/
+      padding: 15px;
+      margin: 15px;
+      border-radius: 15px;
+  } 
+  
+  
+  .company-details p 
+  {
+      font-size: 16px;
+  }
+  
+  #contact {
+     
+      min-height: 500px;
+      background-image: url("https://sg.fiverrcdn.com/photo3s/121132592/original/b6e5f4089eb29268f409d9cb0f1aec7202a1ae98.jpg?1544178560");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      padding: 40px 0;
+     
+  }
+  
+  .contact-wrapper {
+      overflow: auto;
+      padding: 40px;
+      background-color: rgba(255,255,255,.45);
+      border-top-left-radius: 80px;
+      border-bottom-right-radius: 80px;
+  }
+  
+  .contact-form-wrapper {
+      background-color: white;
+      border-radius: 25px;
+      padding: 25px;
+      min-height: 300px;
+      position: relative; 
+  }
+  
+  .contact-form-wrapper input.form-input, textarea.form-input{
+      display: block;
+      border: 1px solid lightblue;
+      border-radius: 15px;
+      padding: 15px;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 10px 0 15px 0;
+  }
+  
+  
+      fieldset {
+          border: none;
+          min-inline-size: unset;
+          margin: 0;
+          padding: 0;
+      }
+  
+  
+  h4.form-title {
+      background-color: #54d486;
+      padding: 20px;
+      margin-top: -50px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 15px;
+      color: white;
+      font-size: 21px;
+  }
+  
+  
+  input.btn {
+      background: rgba(179,220,237,1);
+      background: -moz-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(84,212,134,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,237,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(84,212,134,1)));
+      background: -webkit-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(84,212,134,1) 100%);
+      background: -o-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(84,212,134,1) 100%);
+      background: -ms-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(84,212,134,1) 100%);
+      background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(84,212,134,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#54d486', GradientType=1 );
+  
+      padding: 15px;  
+      border-radius: 15px;
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      border: 1px solid transparent;
+      color: white;
+      text-transform: uppercase;
+  }
+  
+  input.btn:hover {
+      background-color: none;
+      background: white;
+      border: 1px solid rgba(84,212,134,1);
+      color: rgba(84,212,134,1);
+  }

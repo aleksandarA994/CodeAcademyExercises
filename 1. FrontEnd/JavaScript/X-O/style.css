@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+}
+
+.game {
+    width: 500px;
+    height: 500px;
+    
+    margin: 0 auto;
+    
+    
+}
+
+.game-field {
+width: 33.1%;
+height: 33.1%;
+display: inline-block;
+background-color: grey;
+border: 2px solid red;
+color: black;
+font-size: 40px;
+padding-left: 2px;
+
+
+
+}
+
+.game-field:hover{
+    background-color: rgb(214, 199, 178);
+}
+
+.winner {
+    width: 500px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

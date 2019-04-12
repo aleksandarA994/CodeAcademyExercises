@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #2E2C2C;
+    
+}
+#main-container{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Baloo Chettan', cursive;
+    background-image:url('https://as2.ftcdn.net/jpg/00/85/66/61/500_F_85666121_OoO4gVtJSTFQdkhu02CjES6yRIAoCixQ.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+}
+
+.main-heading{
+    text-align: center;
+    background-color: #3D0B0B;
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.top-wrapper{
+    display: flex;
+    margin-top: 40px;
+    
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;    
+    width: 50%;
+    align-items: center;
+}
+
+.artist-name{
+    width: 500px;
+    height: 50px;
+    border: 8px double #620C0C;
+    text-align: center;
+    font-size: 28px;
+    color: darkred;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+}
+
+.artist-image{
+    width: 500px;
+    height: 500px;
+    border: 8px double #620C0C;
+    margin-top: 100px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;      
+    align-items: center;
+
+}
+
+.similar-artist{
+    width: 300px;
+    height: 50px;
+    border: 8px double #620C0C;
+    font-size: 24px;
+    text-align: center;  
+    color: black;
+    text-transform:uppercase;
+
+}
+
+.similar-name{
+    width: 200px;
+    /* height: 20px; */
+    border: 8px double #620C0C;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.similar-name:hover{
+    background-color: #494646;
+    color: white;
+}
+
+.similar-image{
+    width: 100px;
+    height: 100px;
+    border: 4px double #620C0C;
+    margin-top: 20px;
+    
+}
+
+.bottom-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.bottom-info{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.stats{
+    width: 30%;
+    border: 4px double #620C0C;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: wheat;
+}
+
+.tags{
+    width: 70%;
+    border: 4px double #620C0C;
+    margin-left: 10px;
+    color: maroon;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: wheat;
+}
+
+
+
+.content-summary{
+    display: flex;
+    flex-direction: column;
+    border: 4px double #620C0C;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.content{
+    width: 100%;
+    border: 4px double #620C0C;
+    color: maroon;
+    background-color: wheat;
+}
+
+.summary{
+    width: 100%;
+    border: 4px double #620C0C;
+    margin-top: 10px;
+    color: maroon;
+    background-color: wheat;
+
+}
+
+.p1,.p2{
+    padding-left: 5px;
+    color: maroon;
+}
+
+
+.min-button, .read-button{
+    margin-left: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Baloo Chettan', cursive;
+    background-color: maroon;
+    color: white;
+}
+
+.min-button:hover, .read-button:hover{
+    background-color: #3D0B0B;
+}
+
+.albums-tracks{
+display: flex;
+border: 4px double #620C0C;
+}
+
+.albums{
+    width: 50%;
+    background-color: wheat;
+    color: maroon;
+    text-align: center;
+    border-right: 3px solid #620C0C;
+    padding: 10px;
+}
+
+.tracks{
+    width: 50%;
+    background-color: wheat;
+    color: maroon;
+    text-align: center;
+    padding: 10px;
+}
+
+.albums-heading{
+    text-align: center;
+    color: maroon;
+}
+
+.album-text{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #620C0C;
+}
+
+.albumBtn{
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Baloo Chettan', cursive;
+    background-color: maroon;
+    color: white;
+}
+
+.track-text{
+    padding-top: 10px;
+}
+
+#searchBtn{
+
+}
+
+#searchInput{
+    margin-left: 40%;
+}

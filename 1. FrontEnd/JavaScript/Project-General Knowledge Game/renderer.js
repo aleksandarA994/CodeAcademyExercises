@@ -5,7 +5,7 @@ this.columnData = null;
 this.pageLogic = new Logic();
 
 // this.columnData = this.pageLogic.getDataForColumns();
-console.log(this.columnData);
+// console.log(this.columnData);
 var self = this;
 this.currentLevel = 0;
 this.game = $('<div>').addClass('game-wrapper').hide().appendTo(this.mainContainer);
@@ -16,92 +16,56 @@ this.renderAll = function(){
     this.renderFirstPart();
     this.renderGame();
     this.correctAnswer();
-    this.correctMain();
-    // this.gameFunctionality();
+    this.correctMain(); 
     
-
-    // this.renderSecondPart();
-    // this.renderGame();
 
 }
 
 
-// this.setTimeInterval = function(timer){
-    
-//     var counter = 5;
 
-//         var interval = setInterval(function() {
-//         counter--;
-//         if (counter >= 0) {
-//             $(timer).text(counter);
-//           }
-//         if (counter === 0 ) {
-            
-//             var players = JSON.parse(localStorage.getItem("players"));
-                    
-//             for (let index = 0; index < players.length; index++) {
-                
-//                     players[index].isActive = !players[index].isActive;
-//                     // if za active id
-                    
-                
-//             }
-//             localStorage.setItem("players", JSON.stringify(players));
-//             clearInterval(interval);
-//         } 
-//     }, 1000);
-
-// }
-
-
-// this.createPlayers = function(){
-
-//     var player1 = new Player($(playerName).text(), true);
-//     var player2 = new Player($(playerName).text(), false);
-//     var players = [player1, player2];
-//     localStorage.setItem("players", JSON.stringify(players));
-
-// }
 
 this.renderFirstPart=function(){
    var welcomePart = $('<div>').addClass('welcome-part').appendTo(this.mainContainer);
    var welcomeHeading = $('<h1>').addClass('welcome-heading').text('Welcome to the game of associations').appendTo(welcomePart);
    var welcomePara = $('<p>').addClass('welcome-para')
    .text('This is a general knowledge game, so turn your brains on and have fun.').appendTo(welcomePart);
-   var contBtn = $('<button>').addClass('contBtn').text('Continue').appendTo(welcomePart);
+   var contDiv = $('<div>').addClass('cont-div').appendTo(welcomePart);
+   var contBtn = $('<button>').addClass('contBtn').text('Continue').appendTo(contDiv);
 
 
    
 // }
 
 // this.renderSecondPart=function(){
-    var prefDiv = $('<div>').addClass('pref-div').show().appendTo(this.mainContainer);
+    var prefDiv = $('<div>').addClass('pref-div').hide().appendTo(this.mainContainer);
     var rules = $('<div>').addClass('rules').hide()
-    .text('Choose a box (A1,B3,C2,D4..etc) and word will appear, therefore you are able to guess the main word of the column or press next.If you guess the main word of a column, you could go for the main word of the game. Every correct answer brings you different amount of points, depending on how many word boxes are revealed. Each player has 15 seconds for opening a box and guessing the main words.')
+    .text('Choose a box (A1,B3,C2,D4..etc) and word will appear, therefore you are able to guess the main word of a column. Correct guess will color the field green, incorrect red. If you guess the main word of a column, you could go for the main word of the game. Every correct answer brings you different amount of points. Each player has 20 seconds for opening a box and guessing the main words.')
     .appendTo(prefDiv);
     var minRules = $('<button>').addClass('minRules').text('X').appendTo(rules);
     var rulesBtn = $('<button>').addClass('rulesBtn').text('Rules').appendTo(prefDiv);
     var playerInfo = $('<div>').addClass('player-info').appendTo(prefDiv);
     var headingPlayer = $('<h1>').addClass('heading-player').text('Insert players names').appendTo(playerInfo);
+    var inputDiv = $('<div>').addClass('input-div').appendTo(playerInfo);
     var player1 = $('<input>')
     .attr('placeholder','Insert  Name').addClass('player-name first')
-    .appendTo(playerInfo);
+    .appendTo(inputDiv);
     var player2 = $('<input>')
     .attr('placeholder','Insert  Name').addClass('player-name second')
-    .appendTo(playerInfo);
+    .appendTo(inputDiv);
     var submit = $("<button>").addClass('submit').text('Submit').appendTo(playerInfo);
     var level = $('<div>').addClass('level-info').appendTo(prefDiv);
     var levelHeading = $('<h1>').addClass('heading-player').text('Choose a difficulty level').appendTo(level);
-    var levelEasyBtn = $('<button>').addClass('levelBtn').text('Easy').appendTo(level);
-    var levelMediumBtn = $('<button>').addClass('levelBtn').text('Medium').appendTo(level);
-    var levelHardBtn = $('<button>').addClass('levelBtn').text('Hard').appendTo(level);
+    var lvlBtnDiv = $('<div>').addClass('lvl-div').appendTo(level);
+    var levelEasyBtn = $('<button>').addClass('levelBtn').text('Easy').appendTo(lvlBtnDiv);
+    var levelMediumBtn = $('<button>').addClass('levelBtn').text('Medium').appendTo(lvlBtnDiv);
+    var levelHardBtn = $('<button>').addClass('levelBtn').text('Hard').appendTo(lvlBtnDiv);
 
     
 
 
     $(submit).on('click', function(e){
-        $(playerName).text($(player1).val());
-        $(playerName2).text($(player2).val());   
+        $(playerNameF).text($(player1).val());
+        $(playerNameS).text($(player2).val());   
         
     });
 
@@ -126,7 +90,7 @@ this.renderFirstPart=function(){
         $(prefDiv).hide(1000)
         $(self.game).show(1000);
         this.columnData = this.pageLogic.getDataForColumns();
-        self.gameFunctionality();
+        // self.gameFunctionality();
 
 
         
@@ -137,7 +101,7 @@ this.renderFirstPart=function(){
         $(prefDiv).hide(1000)
         $(self.game).show(1000);
         this.columnData = this.pageLogic.getDataForColumnsMed();
-        self.gameFunctionality();
+        // self.gameFunctionality();
 
 
      
@@ -147,103 +111,49 @@ this.renderFirstPart=function(){
         $(prefDiv).hide(1000)
         $(self.game).show(1000);  
         this.columnData = this.pageLogic.getDataForColumnsHard();
-        self.gameFunctionality();
+        // self.gameFunctionality();
 
       
      
     });  
-
-    // this.getData = function(){
-
-        
-    // $(levelEasyBtn).on('click', function(event){
-      
-    //     this.columnData = this.pageLogic.getDataForColumns();
-    //     self.gameFunctionality();
-
-        
-     
-    // });  
-
-    // $(levelMediumBtn).on('click', function(event){
-      
-    //     this.columnData = this.pageLogic.getDataForColumnsMed();
-    //     self.gameFunctionality();
-
-
-     
-    // });  
-
-    // $(levelHardBtn).on('click', function(event){
-       
-    //     this.columnData = this.pageLogic.getDataForColumnsHard();
-    //     self.gameFunctionality();
-
-      
-     
-    // });  
-
-    // }
-
-    
-// }
-// var game = $('<div>').addClass('game-wrapper').hide().appendTo(this.mainContainer);
+  
 
 this.renderGame = function(){
+
     // var game = $('<div>').addClass('game-wrapper').hide().appendTo(this.mainContainer);
     var playersDiv = $('<div>').addClass('players-wrapper-game').appendTo(self.game);
     
     var firstPlayer = $('<div>').attr('id', 'active').addClass('player player1').appendTo(playersDiv);
-    var playerImg = $('<img>').addClass('playerImg').attr('src', 'images/avatar.png').appendTo(firstPlayer);
-    var playerName = $('<div>').addClass('playerName').appendTo(firstPlayer);
-    var playerPoints = $('<div>').addClass('playerPts').text('').appendTo(firstPlayer);
+    var playerImg = $('<img>').addClass('playerImg player1').attr('src', 'images/avatar.png').appendTo(firstPlayer);
+    var playerName = $('<div>').addClass('playerName player1').appendTo(firstPlayer);
+    window.playerNameF = playerName;
+    var playerPoints = $('<div>').addClass('playerPts player1').text('').appendTo(firstPlayer);
+    window.playerPts1 = playerPoints;
 
     var timer = $('<div>').addClass('timer').text('20').appendTo(playersDiv);
+    window.timerGlobal = timer;
 
     
 
     var secondPlayer = $('<div>').addClass('player player2').appendTo(playersDiv);
-    var playerImg2 = $('<img>').addClass('playerImg').attr('src', 'images/avatar.png').appendTo(secondPlayer);
-    var playerName2 = $('<div>')
-    
-    .addClass('playerName').appendTo(secondPlayer);
-    var playerPoints2 = $('<div>').addClass('playerPts').text('').appendTo(secondPlayer);
+    var playerImg2 = $('<img>').addClass('playerImg player2').attr('src', 'images/avatar.png').appendTo(secondPlayer);
+    var playerName2 = $('<div>').addClass('playerName player2').appendTo(secondPlayer);
+    window.playerNameS = playerName2;
+    var playerPoints2 = $('<div>').addClass('playerPts player2').text('').appendTo(secondPlayer);
+    window.playerPts2 = playerPoints2;
 
-      // Players turns
-//   var turn = true;
-//   this.playersTurn = function(){
-    
-//       if(turn == true){
-//           $(firstPlayer).css('box-shadow', '0px 10px 10px 10px #666');
-//         //   self.setTimeInterval(timer);
-//           self.correctAnswer();
-//         //   if(counter === 0){
-//             turn = false;  
-//         //   }
-             
-//       } else if(turn == false){
-//             $(firstPlayer).css();
 
-//             $(secondPlayer).css('box-shadow', '0px 10px 10px 10px #666');
-//             self.setTimeInterval(timer);
-//             turn = true;
-//           }
-//       }
 
-    //   this.createPlayers = function(){
 
         var playerOne = new Player('1', true);
         var playerTwo = new Player('2', false);
         var players = [playerOne, playerTwo];
         localStorage.setItem("players", JSON.stringify(players));
     
-    // }
-
-  
-
-
+    
   
     var gameTop = $('<div>').addClass('game-part top').appendTo(self.game);
+    var holder = $('<div>').addClass('holder').appendTo(gameTop);
     var columnA = $('<div>').addClass('column-a').appendTo(gameTop);
     for (var i=0; i<4; i++){
         var wordBox = $('<div>').addClass('word-box').attr('id','box'+ i).appendTo(columnA);
@@ -281,7 +191,7 @@ this.renderGame = function(){
 
 
 
-    var gameBot = $('<div>').addClass('game-part bot').appendTo(self.gfgame);
+    var gameBot = $('<div>').addClass('game-part bot').appendTo(self.game);
     var columnC = $('<div>').addClass('column-c').appendTo(gameBot);
 
     var mainColumnC = $('<input>').addClass('main-column c').appendTo(columnC);
@@ -310,6 +220,8 @@ this.renderGame = function(){
         $('#box14').text('D2');
         $('#box15').text('D1');
     } 
+
+   
 }
     
     $(contBtn).on('click', function(e){
@@ -318,21 +230,31 @@ this.renderGame = function(){
     })
    
     // var holder = $('<div>').addClass('holder-div').appendTo("#main-container");
-    var playBtn = $('<button>').addClass('playBtn').text('Ready').appendTo(self.game);
-    var nextBtn = $('<button>').addClass('nextBtn').text('Next').show().appendTo(self.game);
+    var readyBtnDiv = $('<div>').addClass('rdy-div').appendTo(self.game);
+    var playBtn = $('<button>').addClass('playBtn').text('Ready').appendTo(readyBtnDiv);
+    var nextBtnDiv = $('<div>').addClass('next-div').appendTo(self.game);
+    var nextBtn = $('<button>').addClass('nextBtn').text('Next').hide().appendTo(nextBtnDiv);
 
     $(nextBtn).on('click', (event)=>{
 
         self.currentLevel++;
         // self.renderGame();
-        self.gameFunctionality();
+        
+        self.renderWordBox();
+        // self.gameFunctionality();
+        $(nextBtn).hide();
+        $(playBtn).show();
+        clearInterval(interval);
+        
     });
 
 
     $(playBtn).on('click', function(event){
 
-    self.setTimeInterval(timer);
-    $(".player1").css('box-shadow', '0px 10px 10px 10px #666');    
+    self.setTimeInterval(timerGlobal);
+    self.gameFunctionality();
+
+    $(".player1").css('box-shadow', '0px 5px 5px 5px #666');    
     
     $(playBtn).hide();
     })
@@ -358,7 +280,7 @@ this.renderGame = function(){
         var tempSecretMain = $(secretMain[counterForColumns]);
 
         tempSecretColumn.text(temp.mainCol);
-        tempSecretMain.text(this.columnData[self.currentLevel   ][4]);
+        tempSecretMain.text(this.columnData[self.currentLevel][4]);
 
       (function(temp){
         columnsLength[i].onclick = function() {
@@ -383,129 +305,185 @@ this.renderGame = function(){
            event.target.innerText=temp.col4;    
         }
       })(temp);
-      
-        // $(columnsLength[i + 1]).text(this.columnData[counterForColumns].col2);
-        // $(columnsLength[i + 2]).text(this.columnData[counterForColumns].col3);
-        // $(columnsLength[i + 3]).text(this.columnData[counterForColumns].col4);
-
+              
         counterForColumns++;
         i += 3;
     }
 
 }
 
-    // Correct column answer
+    // Correct column answer 
 
     this.correctAnswer = function(){
     
-    $('.main-column').on('keydown', function(e) {
+    $('.main-column').on('keydown', (e)=> {
             if (e.which == 13) {
                 e.preventDefault();
                 var selectedInputText = $($("input:focus")[0]);
 
                 var secretAnswer = selectedInputText.next().text();
-                if(selectedInputText.val() === secretAnswer){
-                    // alert("Tocen odgovor");
+                if(selectedInputText.val() === secretAnswer){                
+
+                self.colorAnswerColumn();
+                       
 
                     var players = JSON.parse(localStorage.getItem("players"));
                     
                     for (let index = 0; index < players.length; index++) {
                         
                         if(players[index].isActive){
-                            players[index].points += 5;
+                            if (players[index].name === '1'){
+                            $(playerPts1).text(players[index].points += 10);
+                                
+                            } else if (players[index].name === '2'){
+                                $(playerPts2).text(players[index].points += 10);
+                            }
                         }
+                        localStorage.setItem("players", JSON.stringify(players));
                     }
-                    localStorage.setItem("players", JSON.stringify(players));
-                } else{
-                    alert ('Incorrect');
+                    clearInterval(interval);
+                   $(timerGlobal).text('20');
+                    self.setTimeInterval(timerGlobal);
+                } else {
+                                      
+                    this.reset();                         
+
                 }
+                
             }
+        
         });
 
     }
+
 
     //CORRECT MAIN ANSWER
 
     this.correctMain = function(){
 
         $('.main-solution').on('keydown', function(e) {   
-        if (e.which == 13) {
-            e.preventDefault();
-            var selectedInputText = $($("input:focus")[0]);
+            if (e.which == 13) {
+                e.preventDefault();
+                var selectedInputText = $($("input:focus")[0]);
 
-            var secretMain = selectedInputText.next().text();
+                var secretMain = selectedInputText.next().text();
 
-            
-            if(selectedInputText.val() === secretMain){
-                // alert("Tocen odgovor");
-
-                var players = JSON.parse(localStorage.getItem("players"));
                 
-                for (let index = 0; index < players.length; index++) {
+                if(selectedInputText.val() === secretMain){
+
+                  
+                    self.colorAnswer();
+
+                    var players = JSON.parse(localStorage.getItem("players"));
                     
-                    if(players[index].isActive){
-                        players[index].points += 15;
+                    for (let index = 0; index < players.length; index++) {
+                        
+                        if(players[index].isActive){
+                            if (players[index].name === '1'){
+                                $(playerPts1).text(players[index].points += 25);
+                                
+                            } else if (players[index].name === '2'){
+                                $(playerPts2).text(players[index].points +=25);
+                            }
+                    
+                            localStorage.setItem("players", JSON.stringify(players));
+
+                            $(nextBtn).show();
+                        }
                     }
+                   clearInterval(interval);
+                   $(timerGlobal).text('20');
+                   
+                } else {
+                    self.reset();
                 }
-                localStorage.setItem("players", JSON.stringify(players));
-
-                $(nextBtn).show();
-
-            } else{
-                alert ('Incorrect');
+                
                 
             }
-        }
-    });
-
+        });
     }
 
     //CSS FOR PLAYER BOX
 
     this.isActive = function(players){
 
-        // var players = JSON.parse(localStorage.getItem("players"));
-        
+               
         for (let index = 0; index < players.length; index++){
         if(players[index].isActive === true){
             if(players[index].name === "1"){
-                $(".player1").css('box-shadow', '0px 10px 10px 10px #666');
+                $(".player1").css('box-shadow', '0px 5px 5px 5px #666');
                 $(".player2").css('box-shadow', 'none');
             } else {
-                $(".player2").css('box-shadow', '0px 10px 10px 10px #666');
+                $(".player2").css('box-shadow', '0px 5px 5px 5px #666');
                 $(".player1").css('box-shadow', 'none');
-            }
-            
+            }            
 
-            // players[index].isActive = !players[index].isActive;
-
-            // players.isActive =  false;
-
-        } 
-        // else if (players[index].name){
-        //     $(".player2").css('box-shadow', '0px 10px 10px 10px #666');
-        //     $(".player1").css('box-shadow', 'none');
-
-
-
-        //     players.isActive = true;
-        // };
+        }      
         
     }
 
     localStorage.setItem("players", JSON.stringify(players));   
     }
 
-    // TIMER
+// COLOR MAIN
+
+    this.colorAnswer=function(){
+        var players = JSON.parse(localStorage.getItem("players"));
+                    
+        for (let index = 0; index < players.length; index++) {
+            if(players[index].isActive){
+
+                if (players[index].name === '1'){
+                    $(event.target).css("background-color", "#207cca");
+                    
+                } else if (players[index].name === '2'){
+                    $(event.target).css("background-color", "#FF5E28");
+                }
+        
+                localStorage.setItem("players", JSON.stringify(players));
+            } 
+        }
+        
+    }
+
+    // COLOR COLUMN
+
+    this.colorAnswerColumn=function(){
+        var players = JSON.parse(localStorage.getItem("players"));
+                    
+        for (let index = 0; index < players.length; index++) {
+
+
+                if(players[index].isActive){
+
+                if (players[index].name === '1'){
+                    $(event.target).parent().children().css("background-color", "#207cca");
+
+                    $(event.target).css("background-color", "green");  
+                    
+                } else if (players[index].name === '2'){
+                    $(event.target).parent().children().css("background-color", "#FF5E28");
+
+                    $(event.target).css("background-color", "green");  
+                }
+        
+                localStorage.setItem("players", JSON.stringify(players));
+            }
+                
+        }
+        
+    }
+
+    // TIMER 
+    var interval; 
+    this.setTimeInterval = (timerGlobal) => {
     
-    this.setTimeInterval = (timer) => {
-    
-        var counter = 20;
-    
-            var interval = setInterval(() => {
+            var counter = 20;
+            clearInterval(interval);
+            interval = setInterval(() => {
             counter--;
-            if (counter >= 0) {
-                $(timer).text(counter);
+            if (counter >= 0 ) {
+                $(timerGlobal).text(counter);
               }
             if (counter === 0 ) {
                 
@@ -514,12 +492,10 @@ this.renderGame = function(){
                 for (let index = 0; index < players.length; index++) {
                     
                         players[index].isActive = !players[index].isActive;
-
-                        // if za active id
-
+                    
                         self.isActive(players); 
                         setTimeout(() => { 
-                        $(timer).text("20")  
+                        $(timerGlobal).text("20")  
                         }, 200);
                         
                     
@@ -527,16 +503,58 @@ this.renderGame = function(){
                 localStorage.setItem("players", JSON.stringify(players));
                 
                 clearInterval(interval);
-                this.setTimeInterval(timer);
+                this.setTimeInterval(timerGlobal);
             } 
         }, 1000);
     
     }
 
+    // RESET ANSWER
 
+    this.reset=function(){
+        $(event.target).val('Try Again').css('background-color','red');
+        if($(event.target).val('Try Again')){
+           var eTarg = $(event.target)
+           setTimeout(() => { 
+            $(eTarg).val('').css('background-color','#751F21');
+           }, 500);
+            
+        }
+    }
+  
+    // RENDER WORD-BOX
+
+    this.renderWordBox = function(){
+
+        $('#box0').text('A1');
+        $('#box1').text('A2');
+        $('#box2').text('A3');
+        $('#box3').text('A4'); 
+        $('#box4').text('B1');
+        $('#box5').text('B2');
+        $('#box6').text('B3');
+        $('#box7').text('B4'); 
+        $('#box8').text('C1');
+        $('#box9').text('C2');
+        $('#box10').text('C3');
+        $('#box11').text('C4');
+        $('#box12').text('D1');
+        $('#box13').text('D2');
+        $('#box14').text('D3');
+        $('#box15').text('D4');
+
+        $('.main-column').val('').css('background-color', '#751F21');
+        $('.main-solution').val('').css('background-color', 'rgb(66, 10, 11)');
+        $('.word-box').css('background-color', 'maroon').on('mouseover', function(){
+            $(this).css("background", "coral");
+        }).on('mouseout', function() {
+            $(this).css("background", "maroon");
+
+        });
+        
+    }
+  
 
 }
-
-
 
 }

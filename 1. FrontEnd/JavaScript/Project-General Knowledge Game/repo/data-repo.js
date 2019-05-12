@@ -15,13 +15,13 @@ function Repository(){
     }
     this.getDataEasy=function(){
         var easyLvl = [];
-        easyLvl.push(new Column('Pesos', 'Santiago', 'Valdivia', 'Atacama', "Chile"));
-        easyLvl.push(new Column('Base', 'Peak', 'Alps', 'Forest', "Mountain"));
+        easyLvl.push(new Column('Pesos', 'Santiago', 'Valdivia', 'Atacama', "chile"));
+        easyLvl.push(new Column('Base', 'Peak', 'Alps', 'Forest', "mountain"));
 
-        easyLvl.push(new Column('Sacred Valley', 'Lima', 'Incas', 'Machu Picchu', "Peru"));
+        easyLvl.push(new Column('Sacred Valley', 'Lima', 'Incas', 'Machu Picchu', "peru"));
 
-        easyLvl.push(new Column('Ecuador', 'Argentina', 'Colombia', 'Brazil', "South America"));
-        easyLvl.push("Andes");
+        easyLvl.push(new Column('Ecuador', 'Argentina', 'Colombia', 'Brazil', "south america"));
+        easyLvl.push("andes");
 
         this.easyLevel.push(easyLvl);
     }
@@ -30,13 +30,13 @@ function Repository(){
     this.getDataEasy2=function(){
         var easyLvl2 = [];
 
-        easyLvl2.push(new Column('Prisoners', 'World War 2', 'Auschwitz', 'Treblinka', "Camp"));
-        easyLvl2.push(new Column('Germany', 'Nazism', 'War', 'Leader', "Hitler"));
+        easyLvl2.push(new Column('Prisoners', 'World War 2', 'Auschwitz', 'Treblinka', "camp"));
+        easyLvl2.push(new Column('Germany', 'Nazism', 'War', 'Leader', "hitler"));
 
-        easyLvl2.push(new Column('Mask', 'Station', 'Poisonous', 'Helium', "Gas"));
+        easyLvl2.push(new Column('Mask', 'Station', 'Poisonous', 'Helium', "gas"));
 
-        easyLvl2.push(new Column('Jerusalem', 'Synagogue', 'Judaism', 'Anne Frank', "Jews"));
-        easyLvl2.push("Holocaust");
+        easyLvl2.push(new Column('Jerusalem', 'Synagogue', 'Judaism', 'Anne Frank', "jews"));
+        easyLvl2.push("holocaust");
 
         this.easyLevel.push(easyLvl2);
     }
@@ -45,13 +45,13 @@ function Repository(){
 
         var easyLvl3 = [];
 
-        easyLvl3.push(new Column('Water', 'Nature', 'Flowing', 'Vardar', "River"));
-        easyLvl3.push(new Column('Wallet', 'Wealth', 'Paper', 'Currency', "Money"));
+        easyLvl3.push(new Column('Water', 'Nature', 'Flowing', 'Vardar', "river"));
+        easyLvl3.push(new Column('Wallet', 'Wealth', 'Paper', 'Currency', "money"));
 
-        easyLvl3.push(new Column('Thief', 'Action', 'Stealing', 'Armed', "Robbery"));
+        easyLvl3.push(new Column('Thief', 'Action', 'Stealing', 'Armed', "robbery"));
 
-        easyLvl3.push(new Column('Credit Card', 'Account', 'Transfer', 'Deposit', "Transaction"));
-        easyLvl3.push("Bank");
+        easyLvl3.push(new Column('Credit Card', 'Account', 'Transfer', 'Deposit', "transaction"));
+        easyLvl3.push("bank");
 
         this.easyLevel.push(easyLvl3);
     
@@ -67,13 +67,13 @@ function Repository(){
     }
     this.getDataMedium=function(){
         var mediumLvl = [];
-        mediumLvl.push(new Column('Greek', 'Slavic', 'Egyptian', 'Scandinavian', "Mythology"));
-        mediumLvl.push(new Column('Christianity', 'Islam', 'Buddhism', 'Hinduism', "Religion"));
+        mediumLvl.push(new Column('Greek', 'Slavic', 'Egyptian', 'Scandinavian', "mythology"));
+        mediumLvl.push(new Column('Christianity', 'Islam', 'Buddhism', 'Hinduism', "religion"));
 
-        mediumLvl.push(new Column('Thunder', 'Olympus', 'Hera', 'Greece', "Zeus"));
+        mediumLvl.push(new Column('Thunder', 'Olympus', 'Hera', 'Greece', "zeus"));
 
-        mediumLvl.push(new Column('Paranormal', 'Mystical', 'Miraculous', 'Force', "Supernatural"));
-        mediumLvl.push("God");
+        mediumLvl.push(new Column('Paranormal', 'Mystical', 'Miraculous', 'Force', "supernatural"));
+        mediumLvl.push("god");
 
         this.mediumLevel.push(mediumLvl);
     }
@@ -82,13 +82,13 @@ function Repository(){
     this.getDataMedium2=function(){
         var mediumLvl2 = [];
 
-        mediumLvl2.push(new Column('Magazine', 'Announcement', 'The New York Times', 'Print', "Newspaper"));
-        mediumLvl2.push(new Column('Social Media', 'Network', 'Wireless', 'Connection', "Internet"));
+        mediumLvl2.push(new Column('Magazine', 'Announcement', 'The New York Times', 'Print', "newspaper"));
+        mediumLvl2.push(new Column('Social Media', 'Network', 'Wireless', 'Connection', "internet"));
 
-        mediumLvl2.push(new Column('Business', 'Promotion', 'Product', 'Management', "Marketing"));
+        mediumLvl2.push(new Column('Business', 'Promotion', 'Product', 'Management', "marketing"));
 
-        mediumLvl2.push(new Column('Picture', 'Sound', 'Recording', 'Tape', "Video"));
-        mediumLvl2.push("Advertisement");
+        mediumLvl2.push(new Column('Picture', 'Sound', 'Recording', 'Tape', "video"));
+        mediumLvl2.push("advertisement");
 
         this.mediumLevel.push(mediumLvl2);
     }
@@ -97,13 +97,13 @@ function Repository(){
 
         var mediumLvl3 = [];
 
-        mediumLvl3.push(new Column('Apartment', 'Trump', 'Country', 'First Lady', "President"));
-        mediumLvl3.push(new Column('Commercial', 'Meeting', 'Party', 'Speech', "Campaigne"));
+        mediumLvl3.push(new Column('Apartment', 'Trump', 'Country', 'First Lady', "president"));
+        mediumLvl3.push(new Column('Commercial', 'Meeting', 'Party', 'Speech', "campaigne"));
 
-        mediumLvl3.push(new Column('Right', 'Sheet', 'Box', 'Choice', "Vote"));
+        mediumLvl3.push(new Column('Right', 'Sheet', 'Box', 'Choice', "vote"));
 
-        mediumLvl3.push(new Column('Government', 'Foreign', 'Duel', 'Ministry', "Politics"));
-        mediumLvl3.push("Elections");
+        mediumLvl3.push(new Column('Government', 'Foreign', 'Duel', 'Ministry', "politics"));
+        mediumLvl3.push("elections");
 
         this.mediumLevel.push(mediumLvl3);
     
@@ -120,13 +120,13 @@ function Repository(){
     this.getDataHard=function(){
         var hardLvl = [];
 
-        hardLvl.push(new Column('Movie', 'Character', 'Action', '007', "James Bond"));
-        hardLvl.push(new Column('Agency', 'Service', 'Security', 'USA', "FBI"));
+        hardLvl.push(new Column('Movie', 'Character', 'Action', '007', "james bond"));
+        hardLvl.push(new Column('Agency', 'Service', 'Security', 'USA', "fbi"));
 
-        hardLvl.push(new Column('Property', 'Land', 'Buildings', 'Selling', "Real estate"));
+        hardLvl.push(new Column('Property', 'Land', 'Buildings', 'Selling', "real estate"));
 
-        hardLvl.push(new Column('Spy', 'Classified', 'Unknown', 'Confidential', "Secret"));
-        hardLvl.push("Agent");
+        hardLvl.push(new Column('Spy', 'Classified', 'Unknown', 'Confidential', "secret"));
+        hardLvl.push("agent");
 
         this.hardLevel.push(hardLvl);
     }
@@ -136,13 +136,13 @@ function Repository(){
         var hardLvl2 = [];
        
 
-        hardLvl2.push(new Column('Representative', 'Law', 'Majority', 'Palace of Westminster', "Parliament"));
-        hardLvl2.push(new Column('Belgium', 'City', 'Atomium', 'Grand Place', "Brussels"));
+        hardLvl2.push(new Column('Representative', 'Law', 'Majority', 'Palace of Westminster', "parliament"));
+        hardLvl2.push(new Column('Belgium', 'City', 'Atomium', 'Grand Place', "brussels"));
 
-        hardLvl2.push(new Column('Money', 'Currency', 'Cent', 'Coin', "Euro"));
+        hardLvl2.push(new Column('Money', 'Currency', 'Cent', 'Coin', "euro"));
 
-        hardLvl2.push(new Column('War', 'Comfort', 'Green', 'Geographical', "Zone"));
-        hardLvl2.push("European Union");
+        hardLvl2.push(new Column('War', 'Comfort', 'Green', 'Geographical', "zone"));
+        hardLvl2.push("european union");
 
         this.hardLevel.push(hardLvl2);
     }
@@ -152,13 +152,13 @@ function Repository(){
         var hardLvl3 = [];
         
 
-        hardLvl3.push(new Column('Life', 'Funeral', 'End', 'Incarnation', "Death"));
-        hardLvl3.push(new Column('Expressing', 'Body', 'Language', 'Victorian', "Speech"));
+        hardLvl3.push(new Column('Life', 'Funeral', 'End', 'Incarnation', "death"));
+        hardLvl3.push(new Column('Expressing', 'Body', 'Language', 'Victorian', "speech"));
 
-        hardLvl3.push(new Column('Slave', 'Lord', 'Chain', 'Cotton', "Slavery"));
+        hardLvl3.push(new Column('Slave', 'Lord', 'Chain', 'Cotton', "slavery"));
 
-        hardLvl3.push(new Column('Wrong', 'Left', 'Fair', 'Moral', "Right"));
-        hardLvl3.push("Freedom");
+        hardLvl3.push(new Column('Wrong', 'Left', 'Fair', 'Moral', "right"));
+        hardLvl3.push("freedom");
 
         this.hardLevel.push(hardLvl3);
     

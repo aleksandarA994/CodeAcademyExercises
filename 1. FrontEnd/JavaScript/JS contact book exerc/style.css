@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+#main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-div{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.first-row, .second-row, .third-row, .fourth-row{
+    display: flex;
+}
+
+#row0, #row4, #row8{
+    border: 1px solid black;
+    width: 150px;
+}
+
+#row1, #row2, #row3, #row5, #row6, #row7, #row9, #row10, #row11{
+    border: 1px solid black;
+    width: 250px;
+}
+
+.head-row{
+    font-weight: bold;
+    text-align: center;
+}
+
+.person-row{
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.button{
+    border-radius: 2px;
+}
+
+
+#btn1, #btn4, #btn7{
+    background-color: darkgreen;
+    color: white;
+    
+}
+
+#btn2, #btn5, #btn8{
+    background-color: darkred;
+    color: white;
+}
+
+.info-div{
+    border: 1px solid black;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;   
+}
+
+.addBtn{
+    float: right;
+    margin-right: 20%;
+}
+
+#row12{
+    width: 150px;
+    border: 1px solid black;
+}
+
+#row13, #row14, #row15{
+    width: 250px;
+    border: 1px solid black;
+}
+
+.btnField{
+    text-align: center;
+    padding-top: 10px;
+}

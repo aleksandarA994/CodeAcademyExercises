@@ -1,0 +1,14 @@
+gotvi mk
+
+logo - http://gotvi.mk/wp-content/uploads/2016/02/logo-bez-slogan.png 
+slogan - http://gotvi.mk/wp-content/uploads/2016/01/Slogan-Gotvi-so-ljubov-so-nagrada-Sajt-na-godinata-728x136.png
+
+main slider -  	http://gotvi.mk/wp-content/uploads/2016/02/Palacinki-za-3-minuti-700x500.jpg
+
+01 - http://gotvi.mk/wp-content/uploads/2017/12/mimoza-salata-serpica-360x240.jpg
+02 - http://gotvi.mk/wp-content/uploads/2017/12/mimoza-salata-serpica-360x240.jpg 
+03 - http://gotvi.mk/wp-content/uploads/2016/02/Palacinki-za-3-minuti-700x500.jpg
+
+
+
+http://gotvi.mk/wp-content/uploads/2017/11/Potpeena-palenta-polenta-free-photos-750x500.jpg 

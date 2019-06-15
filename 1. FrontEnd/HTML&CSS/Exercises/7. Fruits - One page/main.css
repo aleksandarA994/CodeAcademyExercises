@@ -1,0 +1,525 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #282828;
+    width: 100%;
+    display: inline-block;
+    
+
+}
+
+nav ul {
+    display: inline;
+    list-style-type: none;
+    float: right;
+    margin-right: 20%;
+    margin-top: -35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+nav ul li {
+    text-transform: uppercase;
+    color: white;
+    float: left;
+    padding: 10px;
+}
+
+.search input {
+    background-color: #606060;
+    border: none;
+    border-radius: 40px;
+    width:  320px;
+    height: 35px;    
+    background-image: url("images/search.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+    
+    
+
+}
+
+.search {
+    margin-left: 25%;
+    margin-top: 1%;
+    padding-left: 20px;
+}
+
+
+.container {
+    width:100%;
+}
+
+#welcome {
+    max-width: 100%;
+    height: 700px;
+    background-image: url("images/main-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -22px;
+    overflow: auto;
+    
+}
+
+.fb {
+    float: right;
+    margin-right: 5%;  
+}
+.fb img {
+    
+    position: fixed;
+   
+
+
+}
+
+#welcome .tekst {
+    background-color: rgba(0,0,0,.15);
+    width: 60%;
+    height: 35%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: white;
+    display: block;
+    margin-top: 150px;
+    margin-left: 10%;
+    padding: 20px;
+    
+}
+
+#welcome .tekst h1{
+    font-size: 40px;
+    
+   
+}
+
+#welcome .tekst p{
+    font-size: 50px;
+    text-transform: uppercase;
+    
+}
+
+#diets {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box-33 {
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+#diets p{
+    color: #DE3030;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 170px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+
+
+#diets img {
+    margin-left: 170px;
+    padding-top: 100px;
+}
+
+h2 {
+    color: #E23030;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.box-33.middle  {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+     
+    
+}
+
+#diets :last-child p {
+    padding-left: 45px;
+}
+
+#wealth {
+    width: 100%;
+    height: 500px;
+    background-image: url("images/main-back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+#wealth p{
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 200px;
+}
+
+.more .btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc0000+0,cc2c2c+48 */
+    background: rgb(204,0,0); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(204,0,0,1) 0%, rgba(204,44,44,1) 48%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(204,0,0,1) 0%,rgba(204,44,44,1) 48%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(204,0,0,1) 0%,rgba(204,44,44,1) 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc2c2c',GradientType=1 ); /* IE6-9 */
+}
+
+.more .btn:hover {
+    background-color: darkred;
+}
+
+.more {
+    float: right;
+    margin-right: 15%;
+}
+
+#who {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+
+.box-50 {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+
+
+#who .box-50.par {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 90px;
+}
+
+#who .box-50.table table{
+   font-size: 30px; 
+   padding: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border: none;
+   text-align: left;  
+   padding-top: 40px;
+   border-spacing: 0px;
+      
+    
+}
+
+#who .box-50.table td{
+    padding-left: 80px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+    
+}
+#who .box-50.table thead {
+    color: #E23030;
+    
+}
+
+#who .box-50.table tr:nth-child(2) {
+    background-color: lightgray;
+}
+
+#sponsors {
+    width: 100%;
+    height: 500px;
+    background-color: #606060;
+    padding: 20px;
+}
+
+
+#sponsors h4 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    
+    margin-top: 50px;
+}
+
+#sponsors .box-20 {
+    width:20%;
+    float: left;
+    position: relative;
+}
+
+#sponsors .imgs {
+    margin-left: 100px;
+    margin-top: 140px;
+}
+
+#team {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+
+#team .box-25{
+    width: 25%;
+    float: left;
+    position: relative;
+
+}
+
+.one {
+    width: 200px;
+    height: 200px;
+    border: 10px solid pink;
+    border-radius: 25%;
+    background-image: url("images/01.png");
+    background-repeat: no-repeat;
+    background-size: 330px;
+    background-position: center;
+
+}
+.two {
+    width: 200px;
+    height: 200px;
+    border: 10px solid pink;
+    border-radius: 25%;
+    background-image: url("images/02.png");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position-y: -30px;
+    background-position-x: -80px;
+
+}
+.three {
+    width: 200px;
+    height: 200px;
+    border: 10px solid pink;
+    border-radius: 25%;
+    background-image: url("images/03.png");
+    background-repeat: no-repeat;
+    background-size: 330px;
+    background-position: center;
+
+}
+.four {
+    width: 200px;
+    height: 200px;
+    border: 10px solid pink;
+    border-radius: 25%;
+    background-image: url("images/04.png");
+    background-repeat: no-repeat;
+    background-size: 330px;
+    background-position: center;
+
+}
+
+.members {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#team .box-25 h5{
+    text-transform: uppercase;
+    color: #E23030;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    
+}
+
+#team .box-25 p{
+    color: #E23030;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 70px;
+}
+
+#contact {
+    width: 100%;
+    height: 700px;
+    
+    background-image: url("images/contact-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0 auto;
+}
+
+
+
+
+.contact-wrapper {
+    width:100%;
+    height: 700px;
+    
+    overflow: auto;
+    background-color: rgba(0,0,0,.45);
+    
+    
+
+}
+
+.contact-form-wrapper {
+    background-color: white;
+    padding: 10%;
+    border-radius: 20px;
+    
+    width: 70%;
+    margin-top: 100px;
+    
+}
+
+.contact-form-details input.form-input, textarea.form-input {
+    width: 100%;
+    display: block;
+      border: 1px solid #DE3030;
+      border-radius: 15px;
+      padding: 15px;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 10px 0 15px 0;
+    
+}
+
+.account-action label{
+    display: block;
+}
+
+.contact-form-details fieldset {
+    border:none;
+}
+
+input.btn {
+
+    background:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc0000+0,cc2c2c+48 */
+    background: rgb(204,0,0); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(204,0,0,1) 0%, rgba(204,44,44,1) 48%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(204,0,0,1) 0%,rgba(204,44,44,1) 48%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(204,0,0,1) 0%,rgba(204,44,44,1) 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc2c2c',GradientType=1 ); /* IE6-9 */
+
+    padding: 15px;  
+    border-radius: 15px;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+input.btn:hover {
+   
+   background: #DE3030;
+    border: 1px solid rgb(189, 5, 5);
+    color:;white;
+}
+
+h4.form-title {
+    background-color: #DE3030;
+    padding: 20px;
+    margin-top: -25%;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    color: white;
+    font-size: 21px;
+    
+    
+}
+
+h4.main-title {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+h5.description {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+.company-details {
+    padding-left: 15px;
+  /*  background-color: rgba(255,255,255,.2);*/
+    padding: 15px;
+    margin: 15px;
+  
+    
+} 
+
+
+.company-details p {
+    font-size: 16px;
+}
+
+.box-50.info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding-left: 20%;
+    padding-top: 10%;
+    
+}
+
+.info-title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    overflow: auto;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style-type: none;
+    width:500px;
+    
+    background-color: blue;
+    font-family: 'Lucida Sans Serif';
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.div33 {
+    width: 33.3%;
+    float: left;
+}
+
+.white {
+    color: white;
+}
+  
+.yellow {
+    color: yellow;
+}
+
+.red {
+    color: red;
+}
+

@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    
+
+}
+
+.test-layout {
+    width: 100%;
+}
+
+.box-75 {
+    width: 75%;
+    float: left;
+}
+
+.box-50 {
+
+    width:50%;
+    float: left;
+}
+
+.box-33 {
+    width: 33.3%;
+    float: left;
+}
+
+.box-25 {
+    width: 25%;
+    float: left;
+}
+
+.box-10 {
+    width: 10%;
+    float: left;
+}
+
+.box-wrapper {
+    height: 50px;
+    margin: 5px;
+    
+   
+}
+
+.box-wrapper.red{
+    background-color: red;
+   
+}
+.box-wrapper.green{
+    background-color: green;
+  
+}
+.box-wrapper.blue{
+    background-color: blue;
+    
+
+}
+
+.box-wrapper.pink{
+
+    background-color: pink;
+   
+}
